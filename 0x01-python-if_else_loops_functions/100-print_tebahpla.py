@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for i, c in enumerate(range(122, 96, -1)):
-    print("{:c}".format(c - 32 if i % 2 else c), end="")
+for c in range(122, 96, -1):
+    if (c % 2 != 0):
+        c -= 32
+    print("{}".format(chr(c)), end="")
