@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A module that declares a private instance variable size"""
 
+
 class Square:
     """creates a class"""
     def __init__(self, size):

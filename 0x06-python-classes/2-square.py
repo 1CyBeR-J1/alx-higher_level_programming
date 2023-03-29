@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """2-square.py - A module gthat contains a Square class"""
 
+
 class Square:
     """defines a square by:
 
