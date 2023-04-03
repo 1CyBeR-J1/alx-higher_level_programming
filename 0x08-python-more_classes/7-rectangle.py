@@ -69,6 +69,3 @@ class Rectangle:
         """method for deletion"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
-r = Rectangle(2, 4)
-print(r)
