@@ -69,7 +69,7 @@ class Rectangle:
         print("Bye rectangle...")
 
     @staticmethod
-    def bigger_or_equal(rect1, rect2):
+    def bigger_or_equal(rect_1, rect_2):
         """static method that returns which is bigger"""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
