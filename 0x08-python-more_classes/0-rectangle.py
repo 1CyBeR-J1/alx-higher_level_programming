@@ -2,6 +2,6 @@
 """This module is for an empty Rectangle class"""
 
 
-Class Rectangle:
+class Rectangle:
     """A class for RECTANGLE object"""
     pass
