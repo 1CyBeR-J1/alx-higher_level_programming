@@ -10,8 +10,8 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """Initializes a Rectangle class"""
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
         self.__width = width
         self.__height = height
 
@@ -21,5 +21,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Return the Rectangle description"""
-        return "[{}] {:d}/{:d}".format(self.__class__.__name__,
-                self.__width, self__height)
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self__height)
