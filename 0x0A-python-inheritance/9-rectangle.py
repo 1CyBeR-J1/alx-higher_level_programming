@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """A module that creates class to inherit another class"""
 
-
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 
