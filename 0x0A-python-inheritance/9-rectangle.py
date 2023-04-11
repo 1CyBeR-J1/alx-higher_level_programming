@@ -21,4 +21,5 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Return the Rectangle description"""
-        return f"[self.__class__.__name__] {self.__width}/{self.__height}"
+        return "[{}] {}/{}".format(super().__class__.__name__,
+                                    self.__width, self.__height)
