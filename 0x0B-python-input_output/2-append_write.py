@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This Module contains a function that appends a str"""
+"""This Module contains function appends a str"""
 
 
 def append_write(filename="", text=""):
