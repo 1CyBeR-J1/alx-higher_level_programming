@@ -3,7 +3,6 @@
 
 class Square:
     """defines a square by:
-
     - private instance variable: size
     - Instantiation with optional size
     """
