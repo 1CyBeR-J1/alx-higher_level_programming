@@ -2,14 +2,12 @@
 """Module that icludes the class Square"""
 
 class Square:
-    """defines a square by:
-    - private instance variable: size
-    - Instantiation with optional size
-    """
+    """defines a square"""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize the instance attribute"""
         self.size = size
+        self.position = position
 
     @property
     def size(self):
