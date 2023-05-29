@@ -4,7 +4,7 @@
 --	title = Dexter (but the id can be different)
 -- Each record should display: tv_genres.name
 -- Results must be sorted in ascending order by the genre name
-SELECT tv_genres.name AS
+SELECT tv_genres.name
 FROM tv_genres INNER JOIN tv_show_genres
 ON genres.id = show_genres.genres_id
 INNER JOIN tv_shows
