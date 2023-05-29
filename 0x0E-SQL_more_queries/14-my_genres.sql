@@ -6,7 +6,7 @@
 -- Results must be sorted in ascending order by the genre name
 SELECT tv_genres.name
 FROM tv_genres INNER JOIN tv_show_genres
-ON genres.id = show_genres.genres_id
+ON genres.id = show_genres.genre_id
 INNER JOIN tv_shows
 ON shows.id = show_genres.show_id
 WHERE shows.title = "Dexter"
