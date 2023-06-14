@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const orgList = process.argv.slice(2);
-const changeToInt = orgList.map(arg => parseInt(orgList));
+const changeToInt = orgList.map(arg => parseInt(arg));
 
 if (changeToInt.length < 2) {
   console.log(0);
