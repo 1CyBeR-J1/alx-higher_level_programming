@@ -1,4 +1,5 @@
-#!/usr/bin/node
+#!/usr/bin/nodei
+
 const numArgv = process.argv.length - 2;
 if (numArgv === 0) {
 	console.log('No argument')
