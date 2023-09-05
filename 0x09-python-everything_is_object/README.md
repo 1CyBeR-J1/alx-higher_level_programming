@@ -1,1 +1,1 @@
-0x09. Python - Everything is object
+Everything is an Object / CPython Implementation of Python3
