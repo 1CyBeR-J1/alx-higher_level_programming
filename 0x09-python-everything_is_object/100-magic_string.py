@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-magic_string():
+def magic_string(a_list=[]):
+    a_list.append("BestSChool")
+    return ', '.join(a_list)
