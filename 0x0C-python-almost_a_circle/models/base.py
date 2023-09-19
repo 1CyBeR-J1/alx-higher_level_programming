@@ -78,4 +78,3 @@ class Base:
         filename = cls.__name__ + ".csv"
         with open(filename, 'r') as f:
             csvreader = csv.reader(f)
-            for row in csvreader:
