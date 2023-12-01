@@ -2,21 +2,24 @@
 """Module that contains the function"""
 
 
-def find_peak(list_of_integer):
+def find_peak(list_of_integers):
     """finds a peak in a list of unsorted integers"""
-    if not list_of_integer:
+    length = len(list_of_integers)
+    mid = size // 2
+
+    if length == 0:
         return None
 
-    length = len(list_of_integer)
-
-    if length == 1 or length == 2:
-        return max(ints_list)
-
-    left, right = 0, length - 1
-    while left < right:
-        mid = (left + right) // 2
-        if list_of_integers[mid] > list_of_integers[mid + 1]:
-            right = mid
+    while True:
+        length = length // 2
+        if (mid < length - 1 and
+                list_of_integers[mid] < list_of_integers[mid + 1]):
+            if length // 2 == 0:
+                length = 2
+            mid = mid + length // 2
+        elif length > 0 and list_of_integers[mid] < list_of_integers[mid - 1]:
+            if length // 2 == 0:
+                length = 2
+            mid = mid - length // 2
         else:
-            left = mid + 1
-    return list_of_integers[left]
+            return list_of_intergers[mid]
