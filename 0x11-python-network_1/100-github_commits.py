@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""takes your GitHub credentials (username and password)
-and uses the GitHub API to display your id"""
+"""takes 2 arguments in order to solve a challenge"""
 import sys
 import requests
 
