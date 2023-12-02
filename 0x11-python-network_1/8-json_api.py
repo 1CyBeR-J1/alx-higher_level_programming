@@ -10,7 +10,7 @@ if __name__ == "__main__":
     letter = "" if len(sys.argv) == 1 else sys.argv[1]
     load = {"q": letter}
 
-    response = requests.post(url, data=load)
+    r = requests.post(url, data=load)
     try:
         response = r.json()
         if response == {}:
