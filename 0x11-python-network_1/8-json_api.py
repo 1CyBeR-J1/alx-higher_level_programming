@@ -7,7 +7,7 @@ import requests
 
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
-    letter = {"q": sys.argv[1] if len(argv) > 1 else ""}
+    letter = {"q": sys.argv[1] if len(sys.argv) > 1 else ""}
     response = requests.post(url, data=letter)
     try:
         response = r.json()
