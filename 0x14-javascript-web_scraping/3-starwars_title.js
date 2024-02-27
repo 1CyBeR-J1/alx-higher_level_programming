@@ -1,13 +1,12 @@
 #!/usr/bin/node
-
 const request = require('request');
-const baseUrl = 'http://swapi.co/api/films/';
-const url = baseUrl + process.argv[2];
+const BASE_URL = 'https://swapi-api.hbtn.io/api';
 
-request(url, function (error, response, body) {
-  if (error) {
-    console.log(error);
-  } else {
+if (process.argv.length > 2) {
+  request(`${BASE_URL}/films/${process.argv[2]}/`, (err, res, body) => {
+    if (err) {
+      console.log(err);
+    }
     console.log(JSON.parse(body).title);
-  }
-});
+  });
+}
